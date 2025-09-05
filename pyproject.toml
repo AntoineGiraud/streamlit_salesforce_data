@@ -1,0 +1,13 @@
+[project]
+name = "streamlit-salesforce-data"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pendulum>=3.1.0",
+    "polars>=1.33.0",
+    "pyyaml>=6.0.2",
+    "simple-salesforce>=1.12.9",
+    "streamlit>=1.49.1",
+]
