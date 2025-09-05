@@ -1,0 +1,17 @@
+
+sf_techeasy:
+  env: preprod
+  preprod:
+    domain: test
+    # endpoint: https://test.salesforce.com/
+    # url_oauth: https://test.salesforce.com/services/oauth2/token
+    user: user.api@techeasy.preprod
+    mdp: xxx
+    token: xxx
+  prod:
+    domain: login
+    # endpoint: https://salesforce.com/
+    # url_oauth: https://login.salesforce.com/services/oauth2/token
+    user: user.api@homeserve.prod
+    mdp: xxx
+    token: xxx
