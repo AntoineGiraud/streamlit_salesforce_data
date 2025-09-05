@@ -12,6 +12,10 @@ from timer import Timer
 # Connexion à Salesforce
 sf = SalesforceHelper.from_yml()
 
+# list all tables
+df_sf_tables = sf.get_sf_tables()
+df_sf_tables.write_parquet(f"offload/df_sf_tables_{sf.env}.parquet")
+
 
 # -----------------------------------------------------------------------------
 # bulk_2 exports -< outputs .csv chuncks of sf table
