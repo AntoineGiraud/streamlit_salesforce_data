@@ -5,9 +5,19 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "duckdb>=1.3.2",
     "pendulum>=3.1.0",
     "polars>=1.33.0",
     "pyyaml>=6.0.2",
     "simple-salesforce>=1.12.9",
     "streamlit>=1.49.1",
+]
+
+[tool.ruff]
+line-length = 200
+
+[dependency-groups]
+dev = [
+    "pretty-errors>=1.2.25",
+    "ruff>=0.11.8",
 ]
